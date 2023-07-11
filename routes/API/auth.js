@@ -9,7 +9,7 @@ import News from './../../model/News.js';
 import dotenv from 'dotenv';
 dotenv.config();
 
-import settings from '../../config/settings.js';
+
 const router = Router();
 let token1 = '';
 

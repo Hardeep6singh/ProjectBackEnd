@@ -5,8 +5,6 @@ const Person = mongoose.model('users')
 import dotenv from 'dotenv';
 dotenv.config();
 
-import settings  from '../config/settings.js';
-
 const key = process.env.secret
 
 var opts={}
