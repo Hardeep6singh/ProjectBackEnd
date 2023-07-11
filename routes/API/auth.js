@@ -37,7 +37,7 @@ router.post('/register',(req,res)=>{
         .findOne({email: req.body.email})
         .then(person=>{
             if(person){
-                res.status(400).send('<h2>Email already Registered<h2>')
+                res.status(400).json({ success: false, message: 'Email Already registered' })
             }else{
                 //add a new document to the colletion.
                 const newPerson = Person({
