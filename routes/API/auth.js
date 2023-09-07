@@ -107,7 +107,7 @@ router.post('/login',(req,res)=>{
                         
                     }
                     else{
-                        res.status(401).send("<h1>Password not correct</h1>")
+                        res.status(401).send("Incorrect Password")
                     }}
                 )
                 .catch(err=> res.send(err))
